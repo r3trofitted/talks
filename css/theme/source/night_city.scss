@@ -1,0 +1,47 @@
+@import "../template/mixins";
+@import "../template/settings";
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Michroma);
+
+$backgroundColor: #111;
+
+$mainFont: 'Josefin Sans', sans-serif;
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Michroma', Impact, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: none;
+$headingTextTransform: none;
+$selectionBackgroundColor: #e7ad52;
+$mainFontSize: 30px;
+
+@import "../template/theme";
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-align: right;
+}
+
+.reveal h2#cyberpunk-is-cool-and-you-should-care::before { content: "□□□□□□□□"; display: block; }
+.reveal h2#community::before                             { content: "□□□□□□□■"; display: block; }
+.reveal h2#tech::before                                  { content: "□□□□□□■□"; display: block; }
+.reveal h2#diversity::before                             { content: "□□□□□□■■"; display: block; }
+.reveal h2#nomadism::before                              { content: "□□□□□■□□"; display: block; }
+.reveal h2#mistrust-authority::before                    { content: "□□□□□■□■"; display: block; }
+.reveal h2#cool::before                                  { content: "□□□□□■■□"; display: block; }
+.reveal h2#empathy::before                               { content: "□□□□□□■■■"; display: block; }
+.reveal h2#style-over-substance::before                  { content: "□□□□■□□□"; display: block; }
+.reveal h2#revolution-action-::before                    { content: "□□□□■□□■"; display: block; }
+
+.reveal blockquote {
+  text-align: left;
+  font-style: normal;
+  
+  strong {
+    color: $linkColor;
+  }
+}
